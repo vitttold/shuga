@@ -1,1 +1,1 @@
-# shuga
+https://vitttold.github.io/shuga/
