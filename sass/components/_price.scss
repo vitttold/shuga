@@ -1,0 +1,36 @@
+.price {
+  position: relative;
+  background-color: $color-gray;
+}
+
+.price__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price__block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.img_price_pic {
+  position: relative;
+  margin-left: 40px;
+  width: 40%;
+  height: 40%;
+  bottom: -22px;
+
+}
+
+.price__logo {
+  position: relative;
+  top: -13px;
+}
+.bold__price {
+  font-weight: 700;
+  color: $color-brand;
+}
+.color__price {
+  color: $color-brand;
+}

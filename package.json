@@ -1,0 +1,23 @@
+{
+  "name": "shuga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./sass/style.scss ./sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitttold/shuga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitttold/shuga/issues"
+  },
+  "homepage": "https://github.com/vitttold/shuga#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

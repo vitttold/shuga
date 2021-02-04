@@ -1,0 +1,28 @@
+.footer {
+  background-color: $color-brand;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.footer__text {
+  margin: 0;
+  padding: 10px 0;
+  a {
+    text-decoration: none;
+    color: $color-alt;
+    font-weight: 600;
+  }
+  span {
+    margin-right: 20px;
+    font-size: 1.6rem;
+  }
+
+  span:nth-child(2)::before {
+    content: "|";
+    margin-right: 20px;
+  }
+  span:nth-child(3)::before {
+    content: "|";
+    margin-right: 20px;
+  }
+}

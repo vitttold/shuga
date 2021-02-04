@@ -1,0 +1,43 @@
+.contact-us {
+  background: $color-brand-light;
+}
+
+.contact-us__logo {
+  width: 70%;
+  height: auto;
+}
+
+.layout-2-column_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us__content {
+  margin: 55px 0px;
+  position: relative;
+}
+
+.contact-us__form {
+  input,
+  textarea {
+    border: 1px solid #ffffff;
+    padding: 10px 21px;
+    border-radius: 5px;
+
+    &:focus {
+      border: 1px solid #d11c69;
+      outline: none;
+    }
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+  }
+  }
+
+.contact-us__line {
+  margin-bottom: 19px;
+}
+.contact-us__line :first-child {
+  margin-right: 15px;
+}
