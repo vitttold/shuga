@@ -1,5 +1,5 @@
 .main__wrapper {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
 
@@ -10,10 +10,23 @@
 
 .main__block_two {
     margin: 60px 0 60px 40px;
-    padding: 20px 30px 0 30px;
+    padding: 5px 30px 5px 30px;
     border: 3px solid $color-brand-light;  
 }
 
 .main__icon {
     color: $color-brand;
+}
+
+.color{
+    font-weight: 600;
+    color: $color-brand; 
+}
+
+.text_heiht {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+
 }

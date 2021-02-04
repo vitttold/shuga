@@ -3,7 +3,7 @@
 }
 
 .promo__wrapper {
-  position: relative; 
+  position: relative;
 }
 
 .promo__girl {
@@ -29,6 +29,12 @@
   color: $color-brand;
   font-size: 10rem;
 }
+
+.ico_phone {
+  width: 20px;
+  height: auto;
+ }
+
 .phone__promo {
   vertical-align: super;
   font-family: "Roboto Condensed", sans-serif;

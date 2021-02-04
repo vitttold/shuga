@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,35 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-
     <title>Шугаринг в Минске</title>
 </head>
 
 <body>
 
     <header class="navigation" id="#home">
-        <div class="wrapper navigation__wrapper">
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#">Shuga.by</a></li>
-                    <li><a href="#about">О шугаринге</a></li>
-                    <li><a href="#price">Цены</a></li>
-                    <li><a href="#article">Статьи</a></li>
-            </nav>
-        </div>
+        <nav class="wrapper navigation__wrapper">
+            <ul class="navigation">
+                <li><a href="#">Shuga.by</a></li>
+                <li><a href="#about">О шугаринге</a></li>
+                <li><a href="#price">Цены</a></li>
+                <li><a href="#article">Статьи</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <section class="promo">
+    <div class="promo">
         <div class="wrapper promo__wrapper">
             <img class="promo__girl" src="./img/shuga-min.jpg" alt="promo__girl">
             <img class="logo__promo" src="./img/shuga_minsk.svg" alt="logo">
             <div class="tel__promo">
-                <i class="fa fa-mobile fa-3x trubka__promo" aria-hidden="true"></i>
+                <img class="ico_phone" src="./img/mobile.png" alt="mobile">
                 <span class="phone__promo"><a href="tel:+375291292211"> +375 29 129-22-11</a></span>
             </div>
-    </section>
+        </div>
+        <div>
+
+        </div>
+    </div>
 
     <main id="about">
         <div class="wrapper main__wrapper">
@@ -51,20 +52,20 @@
                         Теплая&nbsp;паста удаляет очень мягко и поэтому подходит для&nbsp;чувствительной кожи. </mark>
                 </p>
             </div>
-            <div class=".main__block main__block_two">
-                <p class="text">
-                    У шугаринга масса достоинств:</strong><br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+            <div class="main__block main__block_two">
+                <p class="text_heiht">
+                    <span class="color">У шугаринга масса достоинств</span><br>
+                    <span class="main__icon">&#x2713;</span>
                     Высокая эффективность<br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+                    <span class="main__icon">&#x2713;</span>
                     Доступность<br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+                    <span class="main__icon">&#x2713;</span>
                     Безопасность применения<br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+                    <span class="main__icon">&#x2713;</span>
                     Экологичность<br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+                    <span class="main__icon">&#x2713;</span>
                     Продолжительный эффект<br>
-                    <i class="fa fa-check-square-o main__icon"></i>
+                    <span class="main__icon">&#x2713;</span>
                     Минимум противопоказаний<br>
                 </p>
             </div>
@@ -134,9 +135,12 @@
                 <img src="./img/interesno.svg" alt="price">
             </div>
             <div class="layout-2-column text">
-                <article class="article__block">А знаете ли вы, что депиляция глубокого бикини ее еще называют бразильским бикини
-                    самая популярная и&nbsp;востребованная зона среди клиентов! Однажды ощутив эту неповторимую гладкость от нее уже невозможно
-                    отказаться. Не зря говорят, что депиляция бикини это как дорогое нижнее белье. Никто не видит, но&nbsp;чувствуешь себя королевой!</article>
+                <article class="article__block">А знаете ли вы, что депиляция глубокого бикини ее еще называют
+                    бразильским бикини
+                    самая популярная и&nbsp;востребованная зона среди клиентов! Однажды ощутив эту неповторимую
+                    гладкость от нее уже невозможно
+                    отказаться. Не зря говорят, что депиляция бикини это как дорогое нижнее белье. Никто не видит,
+                    но&nbsp;чувствуешь себя королевой!</article>
 
                 <article class="article__block">Обязательно стоит сделать подмышки.
                     Процедура занимает 5-10&nbsp;минут! И&nbsp;ты уже с гладкими подмышками.
@@ -154,13 +158,13 @@
                 <div class="contact-us__content">
                     <img class="contact-us__logo" src="./img/zaiavka.svg" alt="price">
                     <div>
-                        <p class="text">Вы можете записаться на прием онлайн </p>
-                        <i class="fa fa-mobile fa-3x trubka__promo" aria-hidden="true"></i>
+                        <p class="text">Вы можете записаться на прием онлайн. </p>
+                        <img class="ico_phone" src="./img/mobile.png" alt="mobile">
                         <span class="phone__promo"><a href="tel:+375291292211"> +375 29 129-22-11</a></span>
                     </div>
-                    <div>
-                        <i class="fa fa-envelope-o fa-2x trubka__promo" aria-hidden="true"></i>
-                        <span class="phone__promo"><a href="mailto: lash.by@mail.ru">lash.by@mail.ru</a></span>
+                    <div class="contact-us__mail_margin" >
+                        <img class="ico_phone" src="./img/mail.png" alt="mobile">
+                        <span class="contact-us__mail"><a href="mailto: lash.by@mail.ru">lash.by@mail.ru</a></span>
                     </div>
                 </div>
 
@@ -184,7 +188,7 @@
     <footer class="footer">
         <div class="wrapper">
             <p class=" text footer__text">
-                <span>© Copyright 2021 <a href="https://shuga.by/">shuga.by</a></span>
+                <span>© Copyright 2021 <a href="https://shuga.by/">shuga.by</a> Шугаринг в Минске</span>
                 <span>All Rights Reserved</span>
                 <span> Designed by <a href="https://vitttold.github.io/rsschool-cv/">vitttold</a></span>
             </p>
