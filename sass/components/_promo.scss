@@ -1,15 +1,36 @@
 .promo {
   background: #f88aa3;
+  @include media-mobile {
+background: none;
+
+}
 }
 
 .promo__wrapper {
   position: relative;
-}
+  @include media-mobile {
+      padding: 0px !important; 
+
+  }
+
+ }
 
 .promo__girl {
   position: relative;
   width: 100%;
   height: auto;
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.promo__girl-mobile {
+  display: none;
+  @include media-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .logo__promo {
@@ -18,11 +39,19 @@
   height: auto;
   top: 4%;
   left: 3%;
+  @include media-mobile {
+    width: 61%;
+  }
+
 }
 .tel__promo {
   position: absolute;
   top: 48%;
   left: 10%;
+  @include media-mobile {
+    position: static;
+    padding: 15px 0px 0px 30px ;
+  }
 }
 
 .trubka__promo {
@@ -33,7 +62,7 @@
 .ico_phone {
   width: 20px;
   height: auto;
- }
+}
 
 .phone__promo {
   vertical-align: super;

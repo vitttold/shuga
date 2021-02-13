@@ -1,5 +1,8 @@
 .contact-us {
   background: $color-brand-light;
+  @include media-mobile {
+    display: none;
+}
 }
 
 .contact-us__logo {

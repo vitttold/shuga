@@ -1,32 +1,40 @@
 .main__wrapper {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .main__block {
-    max-width: 50%;
+  max-width: 50%;
+  @include media-mobile {
+    max-width: 100%;
+    margin-top: 30px;
+  }
 }
 
 .main__block_two {
-    margin: 60px 0 60px 40px;
-    padding: 5px 30px 5px 30px;
-    border: 3px solid $color-brand-light;  
+  margin: 60px 0 60px 40px;
+  padding: 5px 30px 5px 30px;
+  border: 3px solid $color-brand-light;
+  @include media-mobile {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    padding-left: 10%;
+  }
 }
 
 .main__icon {
-    color: $color-brand;
+  color: $color-brand;
 }
 
-.color{
-    font-weight: 600;
-    color: $color-brand; 
+.color {
+  font-weight: 600;
+  color: $color-brand;
 }
 
 .text_heiht {
-    font-size: 1.8rem;
-    line-height: 3.3rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
 }

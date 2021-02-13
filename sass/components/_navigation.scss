@@ -4,18 +4,24 @@
   z-index: 1;
   display: flex;
   border-radius: 0 0 50% 50%;
+
+  @include media-mobile {
+    display: none;
+    
+  }
 }
 
 .navigation {
   display: flex;
   margin: 0;
-}
+  
+  }
 
 .navigation li {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
   list-style: none;
-  margin-left: 10px;
+  margin-left: 10px; 
   padding: 10px 10px;
   background: #f0d1e4;
   cursor: pointer;
@@ -29,3 +35,4 @@
     color: #000;
   }
 }
+
