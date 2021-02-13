@@ -341,7 +341,7 @@ template {
   box-sizing: border-box;
 }
 
-.navigation li {
+.inst, .phone__viber, .navigation li {
   transition: all 0.3s ease-out;
 }
 
@@ -351,6 +351,11 @@ template {
   z-index: 1;
   display: flex;
   border-radius: 0 0 50% 50%;
+}
+@media (max-width: 540px) {
+  .navigation__wrapper {
+    display: none;
+  }
 }
 
 .navigation {
@@ -379,15 +384,41 @@ template {
 .promo {
   background: #f88aa3;
 }
+@media (max-width: 540px) {
+  .promo {
+    background: none;
+  }
+}
 
 .promo__wrapper {
   position: relative;
+}
+@media (max-width: 540px) {
+  .promo__wrapper {
+    padding: 0px !important;
+  }
 }
 
 .promo__girl {
   position: relative;
   width: 100%;
   height: auto;
+}
+@media (max-width: 540px) {
+  .promo__girl {
+    display: none;
+  }
+}
+
+.promo__girl-mobile {
+  display: none;
+}
+@media (max-width: 540px) {
+  .promo__girl-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .logo__promo {
@@ -397,11 +428,22 @@ template {
   top: 4%;
   left: 3%;
 }
+@media (max-width: 540px) {
+  .logo__promo {
+    width: 61%;
+  }
+}
 
 .tel__promo {
   position: absolute;
   top: 48%;
   left: 10%;
+}
+@media (max-width: 540px) {
+  .tel__promo {
+    position: static;
+    padding: 15px 0px 0px 30px;
+  }
 }
 
 .trubka__promo {
@@ -429,6 +471,7 @@ template {
 
 .main__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -436,11 +479,24 @@ template {
 .main__block {
   max-width: 50%;
 }
+@media (max-width: 540px) {
+  .main__block {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
 
 .main__block_two {
   margin: 60px 0 60px 40px;
   padding: 5px 30px 5px 30px;
   border: 3px solid #fdcce1;
+}
+@media (max-width: 540px) {
+  .main__block_two {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    padding-left: 10%;
+  }
 }
 
 .main__icon {
@@ -482,10 +538,21 @@ template {
   height: 40%;
   bottom: -22px;
 }
+@media (max-width: 540px) {
+  .img_price_pic {
+    display: none;
+  }
+}
 
 .price__logo {
   position: relative;
   top: -13px;
+}
+@media (max-width: 540px) {
+  .price__logo {
+    width: 80%;
+    top: -18px;
+  }
 }
 
 .bold__price {
@@ -500,6 +567,11 @@ template {
 .article {
   padding: 20px 0 60px;
 }
+@media (max-width: 540px) {
+  .article {
+    padding: 20px 0 20px;
+  }
+}
 
 .article__logo {
   display: flex;
@@ -507,17 +579,50 @@ template {
   padding-right: 19%;
   margin-bottom: 10px;
 }
+@media (max-width: 540px) {
+  .article__logo {
+    height: auto;
+    display: block;
+    padding-right: 0;
+    margin-bottom: 0px;
+  }
+  .article__logo img {
+    max-width: 100%;
+  }
+}
+
+.article__layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .article__block {
+  display: inline-flex;
   padding: 15px 35px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   align-items: center;
   vertical-align: middle;
-  display: inline-flex;
+  flex-basis: 48%;
+  margin-top: 15px;
+}
+.article__block:nth-child(2n) {
+  margin-left: 2%;
+}
+@media (max-width: 540px) {
+  .article__block {
+    padding: 10px 20px;
+    flex-basis: 100%;
+    margin-left: 0 !important;
+  }
 }
 
 .contact-us {
   background: #fdcce1;
+}
+@media (max-width: 540px) {
+  .contact-us {
+    display: none;
+  }
 }
 
 .contact-us__logo {
@@ -605,6 +710,71 @@ template {
   margin-right: 20px;
 }
 
+.contact-us_mobile {
+  display: none;
+}
+@media (max-width: 540px) {
+  .contact-us_mobile {
+    background: #fdcce1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .contact-us_mobile .tel__promo {
+    padding: 0;
+  }
+}
+
+.phone__viber {
+  display: flex;
+  align-content: center;
+  background: #D11C69;
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.phone__viber a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+}
+.phone__viber .text {
+  margin: 0;
+}
+
+.ico_viber {
+  width: 35px;
+  height: auto;
+}
+
+.inst {
+  display: flex;
+  align-content: center;
+  background: #ffffff;
+  margin: 0 0 20px 0;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.inst a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #D11C69;
+  padding-top: 5px;
+}
+.inst .text {
+  margin: 0;
+}
+
 html {
   font-size: 10px;
 }
@@ -667,9 +837,53 @@ mark {
   background: #902252;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #D11C69;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+@media (max-width: 540px) {
+  .hamburger {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    right: 2.5%;
+    top: 2.5%;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  left: 0;
+}
+
 .wrapper {
   max-width: 1020px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 30px;
+  }
 }
 
 .layout-2-column {
